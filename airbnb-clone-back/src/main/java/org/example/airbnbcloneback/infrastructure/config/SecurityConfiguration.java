@@ -25,6 +25,11 @@ public class SecurityConfiguration {
         CsrfTokenRequestAttributeHandler requestHandler = new CsrfTokenRequestAttributeHandler();
         requestHandler.setCsrfRequestAttributeName(null);
         http.authorizeHttpRequests(authorize -> authorize
+                        .requestMatchers(HttpMethod.GET, "api/tenant-listing/get-all-by-category").permitAll()
+                        .requestMatchers(HttpMethod.GET, "api/tenant-listing/get-one").permitAll()
+                        .requestMatchers(HttpMethod.POST, "api/tenant-listing/search").permitAll()
+                        .requestMatchers(HttpMethod.GET, "api/booking/check-availability").permitAll()
+                        .requestMatchers(HttpMethod.GET, "assets/*").permitAll()
                         .anyRequest()
                         .authenticated())
                 .csrf(csrf -> csrf.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
