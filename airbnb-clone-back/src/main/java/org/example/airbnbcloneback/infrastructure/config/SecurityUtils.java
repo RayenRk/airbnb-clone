@@ -88,4 +88,5 @@ public class SecurityUtils {
                 extractAuthorityFromClaims(jwtAuthenticationToken.getToken().getClaims()) : authentication.getAuthorities();
         return authorities.stream().map(GrantedAuthority::getAuthority);
     }
+
 }
