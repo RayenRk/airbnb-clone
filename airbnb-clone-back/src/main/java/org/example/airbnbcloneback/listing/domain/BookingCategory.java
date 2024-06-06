@@ -8,7 +8,7 @@ public enum BookingCategory {
     FARMS,
     TINY_HOMES,
     LAKE, CONTAINERS,
-    CAMPING,
+    CAMPERS,
     CASTLE, ARTIC, BOAT,
     BED_AND_BREAKFASTS,
     ROOMS,
