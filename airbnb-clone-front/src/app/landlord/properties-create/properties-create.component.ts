@@ -4,7 +4,7 @@ import { LandlordListingService } from '../landlord-listing.service';
 import { ToastService } from '../../layout/toast.service';
 import { AuthService } from '../../core/auth/auth.service';
 import { Router } from '@angular/router';
-import { Step } from './steps.model';
+import { Step } from './step.model';
 import {
   CreatedListing,
   Description,

@@ -1,6 +1,6 @@
 import {Component, EventEmitter, input, Output} from '@angular/core';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import {Step} from "../../landlord/properties-create/steps.model";
+import {Step} from "../../landlord/properties-create/step.model";
 
 @Component({
   selector: 'app-footer-step',

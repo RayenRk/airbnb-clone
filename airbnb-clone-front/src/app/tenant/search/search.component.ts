@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { Step } from '../../landlord/properties-create/steps.model';
+import { Step } from '../../landlord/properties-create/step.model';
 import { Search } from './search.model';
 import { DynamicDialogRef } from 'primeng/dynamicdialog';
 import { Router } from '@angular/router';
