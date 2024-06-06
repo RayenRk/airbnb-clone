@@ -10,11 +10,10 @@ import { MenuItem } from 'primeng/api';
 import { ToastService } from '../toast.service';
 import { AuthService } from '../../core/auth/auth.service';
 import { User } from '../../core/model/user.model';
-//import { PropertiesCreateComponent } from '../../landlord/properties-create/properties-create.component';
-//import { SearchComponent } from '../../tenant/search/search.component';
+import { PropertiesCreateComponent } from '../../landlord/properties-create/properties-create.component';
+import { SearchComponent } from '../../tenant/search/search.component';
 import { ActivatedRoute } from '@angular/router';
 import dayjs from 'dayjs';
-import { PropertiesCreateComponent } from '../../landlord/properties-create/properties-create.component';
 
 @Component({
   selector: 'app-navbar',
@@ -116,16 +115,16 @@ export class NavbarComponent implements OnInit {
     });
   }
 
-  // openNewSearch(): void {
-  //   this.ref = this.dialogService.open(SearchComponent, {
-  //     width: '40%',
-  //     header: 'Search',
-  //     closable: true,
-  //     focusOnShow: true,
-  //     modal: true,
-  //     showHeader: true,
-  //   });
-  // }
+  openNewSearch(): void {
+    this.ref = this.dialogService.open(SearchComponent, {
+      width: '40%',
+      header: 'Search',
+      closable: true,
+      focusOnShow: true,
+      modal: true,
+      showHeader: true,
+    });
+  }
 
   private extractInformationForSearch(): void {
     this.activatedRoute.queryParams.subscribe({
