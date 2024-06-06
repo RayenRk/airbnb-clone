@@ -28,21 +28,17 @@ Usage
 
 To fetch the necessary dependencies, run:
 
-bash
-
-Copy code
-
-`npm install`
+```bash
+npm install
+```
 
 ### Launch Development Server
 
 To launch the development server, execute:
 
-bash
-
-Copy code
-
-`ng serve`
+```bash
+ng serve
+```
 
 Navigate to <http://localhost:4200/>. The application will automatically reload if you change any of the source files.
 
@@ -50,11 +46,9 @@ Navigate to <http://localhost:4200/>. The application will automatically reload 
 
 To build the project, run:
 
-bash
-
-Copy code
-
-`ng build`
+```bash
+ng build
+```
 
 The build artifacts will be stored in the `dist/` directory.
 
@@ -71,11 +65,9 @@ Backend Setup
 
 To set up PostgreSQL using Docker, run the following command:
 
-bash
-
-Copy code
-
-`docker run --name airbnb-clone -e POSTGRES_PASSWORD=yourpassword -d -p 5432:5432 postgres`
+```bash
+docker run --name airbnb-clone -e POSTGRES_PASSWORD=yourpassword -d -p 5432:5432 postgres
+```
 
 Ensure you replace `yourpassword` with a secure password.
 
@@ -83,12 +75,10 @@ Ensure you replace `yourpassword` with a secure password.
 
 To run the Spring Boot application, use the following commands:
 
-bash
-
-Copy code
-
-`mvn clean install
-mvn spring-boot:run`
+```bash
+mvn clean install
+mvn spring-boot:run
+```
 
 The backend server will be available at http://localhost:8080/.
 
